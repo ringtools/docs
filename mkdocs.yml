@@ -1,0 +1,32 @@
+site_name: RingTools
+site_url: https://docs.rof.tools
+site_description: Documentation for RingTools. A set of tools which help to set up and manage Rings of Fire, a concept of Bitcoin Lightning Networks.
+site_author: Djuri Baars
+
+theme:
+    name: readthedocs
+    custom_dir: custom_theme/
+    collapse_navigation: true
+nav:
+    - Home: 'index.md'
+    - RingTools-CLI: 
+      - ringtools-cli.md
+    - RingTools-web: 
+      - 'ringtools-web-public.md'
+      - web/local-install.md
+    - 'ringtools-web-telegram.md'
+    - "Rings of Fire":
+      - 'faq.md'
+    - "Links":
+      - 'GitHub': 'https://github.com/ringtools'
+      - 'Website': 'https://rof.tools'
+      - 'RingTools Telegram Bot': 'https://t.me/ringtools_bot'
+      - 'RingTools Telegram Support': 'https://t.me/ringtools_support'
+    - "Communities":
+      - 'Satoshi Radio': 'https://t.me/satoshiradio'
+      - 'Satoshi Radio ROF': 'https://t.me/SatoshiRadioROF'
+      - 'Connect the World': 'https://t.me/connect_the_world'
+
+
+plugins:
+  - search
