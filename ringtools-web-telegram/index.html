@@ -68,6 +68,22 @@
     <li class="toctree-l2"><a class="reference internal" href="#public-commands">Public commands</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#ring-group-commands">Ring-group commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#for-all-ring-participants">For all ring participants</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#for-individual-ring-participants">For individual ring participants</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#for-masters-of-ceremony">For masters of ceremony</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#poll-commands">Poll commands</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#participate-in-ring">Participate in ring</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#set-up-telegram-channel-for-admins">Set up Telegram channel (for admins)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#opening-channels-for-admins">Opening channels (for admins)</a>
     </li>
     </ul>
                     </li>
@@ -131,9 +147,69 @@
             <div class="section">
               
                 <h1 id="telegram-bot">Telegram Bot</h1>
-<p>TBD</p>
+<p>The RingTools Telegram-bot is currently main supporting the Satoshi Radio / Connect the World Rings of Fire and therefore mainly suited as support for the process they are using. It is still is early development so commands might change.</p>
 <h2 id="public-commands">Public commands</h2>
+<pre><code>/ping                           - Check if I'm alive.
+/donate [Sats] [Message]        - Donate to Ringtools-Web Development
+/fullnodeaddress [PubKey]       - Get full address of lightning node
+/nodeinfo [PubKey]              - Get Lightning node info
+/chaninfo [ChannelID]           - Get Lightning channel info
+</code></pre>
 <h2 id="ring-group-commands">Ring-group commands</h2>
+<h3 id="for-all-ring-participants">For all ring participants</h3>
+<pre><code>/ringurl                        - Get ring-specific link for Ringtools-Web
+/ring_channels                  - Get overview of channels
+/node_overview_csv              - Export Groupnodes CSV
+/node_overview                  - Ring participant overview
+</code></pre>
+<h3 id="for-individual-ring-participants">For individual ring participants</h3>
+<pre><code>/participate [PubKey]           - Join this ring
+/unparticipate                  - Leave this ring
+/set_funded                     - Confirm you are funded
+/set_country [CountryCode]      - Set your country to #connect_the_world (e.g. NL or US)
+/unparticipate                  - Leave this ring
+</code></pre>
+<h3 id="for-masters-of-ceremony">For masters of ceremony</h3>
+<pre><code>/set_name [RingName]            - Get Lightning channel info
+/set_size [RingSize]            - Get Lightning channel info
+/import_csv [FileContents]      - Import Groupnodes CSV from Cheeserobot
+/set_ring_mode [mode]           - Set ring mode (e.g. opening_channels)
+/ring_group_logo [Size] [Nr]    - Create a ring group logo (admins only) last parameters are balanced and country
+/set_order [PubKeysContents]    - Reorder participants (using pubkeys.txt export from Ringtools-Web)
+</code></pre>
+<h3 id="poll-commands">Poll commands</h3>
+<pre><code>/poll_ring [RingName] [MaxPpl]  - Create poll to join a ring (admins only)
+/poll_ringleader                - Create poll to become ringleader (admins only)
+</code></pre>
+<h2 id="participate-in-ring">Participate in ring</h2>
+<ol>
+<li>Signal your participation with <code>/participate [PubKey]</code> (e.g. <code>/participate 0380b3dbdf090cacee19eb4dc7a82630bd3de8b12608dd7bee971fb3cd2a5ae2fc</code>)</li>
+<li>Set your country with <code>/set_country [Country]</code> using the 2-letter country code (e.g. <code>/set_country nl</code>)</li>
+<li>Let know if/when you have the funds to open the channel <code>/set_funded true</code> </li>
+</ol>
+<h2 id="set-up-telegram-channel-for-admins">Set up Telegram channel (for admins)</h2>
+<ol>
+<li>Create channel group, set name and invite <a href="https://t.me/ringtools_bot">@ringtools_bot</a>.</li>
+<li>Set name and size:<ul>
+<li><code>/set_name [RingName]</code> (e.g.) <code>/set_name #SRROF_1Msats_21stRING</code></li>
+<li><code>/set_size [RingSize]</code> (e.g.) <code>/set_size 1000000</code></li>
+</ul>
+</li>
+<li>Get channel logo: <code>/ring_group_logo</code> (It should automatically detect size and number from the Ring Name).</li>
+<li>Create ringleader poll: <code>/poll_ringleader</code></li>
+<li>Set autoclean (optional):<ul>
+<li><code>/set_autoclean cmd true</code> (Removes bot commands by others after 1 minute)</li>
+<li><code>/set_autoclean self true</code> (Removes bot response after 1 minute)</li>
+</ul>
+</li>
+</ol>
+<h2 id="opening-channels-for-admins">Opening channels (for admins)</h2>
+<ol>
+<li>(Optional) reorder participats with <code>/set_order [PubKeysContents]</code> (after reordering, download pubkeys.txt from <a href="https://rof.tools">ringtools-web</a>)</li>
+<li>Share ring visual from the watch page of <a href="https://rof.tools">ringtools-web</a></li>
+<li>Let know who has to open with who <code>/ring_channels long</code></li>
+<li>Set the channel message to auto update with <code>/set_ring_mode opening_channels</code></li>
+</ol>
               
             </div>
           </div>
