@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Djuri Baars">
+  <link rel="canonical" href="https://docs.rof.tools/tg/admins/">
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>For admins - RingTools</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "For admins";
+    var mkdocs_page_input_path = "tg/admins.md";
+    var mkdocs_page_url = "/tg/admins/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> RingTools</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">RingTools-CLI</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../ringtools-cli/">Installation and usage</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">RingTools-web</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../ringtools-web-public/">Public instance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../web/local-install/">Local Instance</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Telegram-bot</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../overview/">Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../participate/">Participants</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../convenience/">Convenience features</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">For admins</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ring-wizard">Ring Wizard</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#manually-set-up-telegram-channel">Manually set up Telegram channel</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#opening-channels">Opening channels</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Rings of Fire</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../faq/">Frequently asked questions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Links</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="https://github.com/ringtools">GitHub</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://rof.tools">Website</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://t.me/ringtools_bot">RingTools Telegram Bot</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://t.me/ringtools_support">RingTools Telegram Support</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Communities</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="" href="https://t.me/satoshiradio">Satoshi Radio</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://t.me/SatoshiRadioROF">Satoshi Radio ROF</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://t.me/connect_the_world">Connect the World</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">RingTools</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Telegram-bot &raquo;</li>
+        
+      
+    
+    <li>For admins</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="for-admins">For admins</h1>
+<h2 id="ring-wizard">Ring Wizard</h2>
+<p>The ring wizard automates the channel setup, just use <code>/start_ring_wizard</code> and follow the steps.</p>
+<h2 id="manually-set-up-telegram-channel">Manually set up Telegram channel</h2>
+<ol>
+<li>Create channel group, set name and invite <a href="https://t.me/ringtools_bot">@ringtools_bot</a>.</li>
+<li>Set name and size:<ul>
+<li><code>/set_name [RingName]</code> (e.g.) <code>/set_name #SRROF_1Msats_21stRING</code></li>
+<li><code>/set_size [RingSize]</code> (e.g.) <code>/set_size 1000000</code></li>
+</ul>
+</li>
+<li>Get channel logo: <code>/ring_group_logo_update</code> (It should automatically detect size and number from the Ring Name).</li>
+<li>Create ringleader poll: <code>/poll_ringleader</code></li>
+<li>Set autoclean (optional):<ul>
+<li><code>/set_autoclean cmd true</code> (Removes bot commands by others after 1 minute)</li>
+<li><code>/set_autoclean self true</code> (Removes bot response after 1 minute)</li>
+</ul>
+</li>
+<li>(Optional) Post welcome message <code>/post_message welcome</code></li>
+<li>(Optional) Set user greeting <code>/set_greeting</code></li>
+<li>(Optional) Enable user greeting <code>/ring_greet true 900</code> (900 seconds is 15 minutes)</li>
+<li>(Optional) Change ring group channel name <code>/update_name</code></li>
+</ol>
+<h2 id="opening-channels">Opening channels</h2>
+<ol>
+<li>(Optional) reorder participats with <code>/set_order [PubKeysContents]</code> (after reordering, download pubkeys.txt from <a href="https://rof.tools">ringtools-web</a>)</li>
+<li>Share ring visual from the watch page of <a href="https://rof.tools">ringtools-web</a></li>
+<li>Let know who has to open with who <code>/ring_channels long</code></li>
+<li>Set the channel message to auto update with <code>/set_ring_mode opening_channels</code></li>
+<li>Get ring visual <code>/ring_visual</code></li>
+</ol>
+              
+            </div>
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../convenience/" class="btn btn-neutral float-left"
+            title="Convenience features"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../faq/" class="btn btn-neutral float-right" title="Frequently asked questions">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+    <hr />
+
+    <div role="contentinfo">
+        <!-- Copyright etc -->
+    </div>
+
+    
+    Built with <a href="https://www.mkdocs.org/">MkDocs</a>.
+    
+
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../convenience/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../faq/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
