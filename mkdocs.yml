@@ -14,7 +14,11 @@ nav:
     - RingTools-web: 
       - 'ringtools-web-public.md'
       - web/local-install.md
-    - 'ringtools-web-telegram.md'
+    - Telegram-bot:
+      - 'tg/overview.md'
+      - 'tg/participate.md'
+      - 'tg/convenience.md'
+      - 'tg/admins.md'
     - "Rings of Fire":
       - 'faq.md'
     - "Links":

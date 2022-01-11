@@ -1,4 +1,4 @@
-# Telegram Bot
+# Overview
 
 The RingTools Telegram-bot is currently main supporting the Satoshi Radio / Connect the World Rings of Fire and therefore mainly suited as support for the process they are using. It is still is early development so commands might change.
 
@@ -60,34 +60,3 @@ The RingTools Telegram-bot is currently main supporting the Satoshi Radio / Conn
 /poll_ringleader                - Create poll to become ringleader (admins only)
 /admin_close_poll               - Force close poll
 ````
-
-## Participate in ring
-
-1. Signal your participation with `/participate [PubKey]` (e.g. `/participate 0380b3dbdf090cacee19eb4dc7a82630bd3de8b12608dd7bee971fb3cd2a5ae2fc`)
-2. Set your country with `/set_country [Country]` using the 2-letter country code (e.g. `/set_country nl`)
-3. Let know if/when you have the funds to open the channel `/set_funded true` 
-
-## Set up Telegram channel (for admins)
-
-1. Create channel group, set name and invite [@ringtools_bot](https://t.me/ringtools_bot).
-2. Set name and size:
-    - `/set_name [RingName]` (e.g.) `/set_name #SRROF_1Msats_21stRING`
-    - `/set_size [RingSize]` (e.g.) `/set_size 1000000`
-3. Get channel logo: `/ring_group_logo_update` (It should automatically detect size and number from the Ring Name).
-4. Create ringleader poll: `/poll_ringleader`
-5. Set autoclean (optional):
-    - `/set_autoclean cmd true` (Removes bot commands by others after 1 minute)
-    - `/set_autoclean self true` (Removes bot response after 1 minute)
-6. (Optional) Post welcome message `/post_message welcome`
-7. (Optional) Set user greeting `/set_greeting`
-8. (Optional) Enable user greeting `/ring_greet true 900` (900 seconds is 15 minutes)
-9. (Optional) Change ring group channel name `/update_name`
-
-
-## Opening channels (for admins)
-
-1. (Optional) reorder participats with `/set_order [PubKeysContents]` (after reordering, download pubkeys.txt from [ringtools-web](https://rof.tools))
-2. Share ring visual from the watch page of [ringtools-web](https://rof.tools)
-3. Let know who has to open with who `/ring_channels long`
-4. Set the channel message to auto update with `/set_ring_mode opening_channels`
-5. Get ring visual `/ring_visual`
