@@ -9,6 +9,9 @@ The RingTools Telegram-bot is currently main supporting the Satoshi Radio / Conn
 /fullnodeaddress [PubKey]       - Get full address of lightning node
 /nodeinfo [PubKey]              - Get Lightning node info
 /chaninfo [ChannelID]           - Get Lightning channel info
+/set_country [CountryCode]      - Set your country to #connect_the_world (e.g. NL or US)
+/add_node                       - Register node (see convience features)
+/country_visible                - Make country visible in ring participation polls.
 ````
 
 ## Ring-group commands
@@ -30,7 +33,7 @@ The RingTools Telegram-bot is currently main supporting the Satoshi Radio / Conn
 /set_country [CountryCode]      - Set your country to #connect_the_world (e.g. NL or US)
 /unparticipate                  - Leave this ring
 /get_tz                         - Get overview of timezones of all participants
-/get_file [ignitersh]           - Get igniter.sh file (only when all channels are opened)
+/get_file [igniterconf]           - Get igniter.conf file (only when all channels are opened)
 ````
 
 ### For masters of ceremony
@@ -51,12 +54,13 @@ The RingTools Telegram-bot is currently main supporting the Satoshi Radio / Conn
 /ring_greet [true/false] [cleanDelay] - Enable/disable new user greeting
 /update_name                          - Update ring name
 /ring_visual                          - Get ring visual (same as on rof.tools)
-/ring_group_logo_update               - Update ring group logo
+/update_logo                          - Update ring group logo
 ````
 
 ### Poll commands
-````text
-/poll_ring [RingName] [MaxPpl]  - Create poll to join a ring (admins only)
+````diff
+- /poll_ring [RingName] [MaxPpl]  - Create poll to join a ring, old format (admins only)
+/poll_ring_v2 [RingName] [MaxPpl]  - Create poll to join a ring (admins only)
 /poll_ringleader                - Create poll to become ringleader (admins only)
 /admin_close_poll               - Force close poll
 ````

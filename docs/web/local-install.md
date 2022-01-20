@@ -1,60 +1,60 @@
 # Local Instance
 
-To use RingTools-web on your own machine, you also need a backend.
+To use RingTools-web on your own node, you can use the pre-made docker image, build the docker-image yourself or run the components from source.
 
-## Instructions
+## Umbrel using docker image
 
-1. Install dependencies with `yarn install`
-2. Configure settings by modifying `.env`
-2. Make sure custom [custom LND PubSub server](https://github.com/dsbaars/srrof-lnd-pubsub-python) is running
-3. Start development server with `yarn start`
-4. Navigate to `http://localhost:4200/`
+You can run ringtools-web on your umbrel node with the pre-made image:
 
-# Umbrel
+1) Put the following in a `docker-compose.yml` file on your node:
+````YAML
+version: "3.7"
 
-## Required modification of `lnd.conf` when using Umbrel
-
-When using Umbrel, LND is configured to only accept connections of other dockerized applications. This is very secure, but makes it impossible to connect to outside of the Umbrel docker network.
-
-To use this web-application using [dsbaars/srrof-lnd-pubsub-python](https://github.com/dsbaars/srrof-lnd-pubsub-python) you need to reconfigure your LND instance so it will accept connections from your LAN. Alternatively you could add the [LND PubSub Server](https://github.com/dsbaars/srrof-lnd-pubsub-python) to the existing Umbrel network but that is likely to break when you are updating Umbrel.
-
-**Warning**: Although in my opinion this is a safe modification, do not trust me blindly. Please understand the basics of what the effects of this modification are. Proceed at your own risk.
-
-The [LND gRPC API Reference](https://api.lightning.community/#lnd-grpc-api-reference) and the [Imports and Client section of the Python information](https://github.com/lightningnetwork/lnd/blob/master/docs/grpc/python.md#imports-and-client) should help you understand.
-
-> At the time of writing this documentation, two things are needed in order to make a gRPC request to an lnd instance: a TLS/SSL connection and a macaroon used for RPC authentication. 
-
-> Note that when an IP address is used to connect to the node (e.g. 192.168.1.21 instead of localhost) you need to add `--tlsextraip=192.168.1.21` to your `lnd` configuration and re-generate the certificate (delete tls.cert and tls.key and restart lnd).
-
-What you are doing will regenerate your TLS certificates so it will include the IP-address and the hostname of your umbrel node.
-
-**Important**: Although both the certificate and the private key are regenerated, you only need the certificate itself. If you are going to run the PubSub server externally, you only need to copy `tls.cert` and the `readonly.macaroon`. 
-
-### Instructions
-
-**Note**: You will have to restart LND to apply the changes.
-
-1. Make a backup of your `lnd.conf`
-- `cd ~/umbrel/lnd`
-- `cp lnd.conf lnd.conf.bak`
-
-2. Open the text editor (e.g. `nano ~/umbrel/lnd/lnd.conf` of your choice and add `tlsextraip=<your ip>` below the existing `tlsextraip=` line.
-
-3. Just below the new entry, add another `tlsextradomain=` entry so it contains two entries in total:
-````
-tlsextradomain=umbrel.local
-tlsextradomain=umbrel
+services:
+  ringtoolsweb:
+    image: ghcr.io/ringtools/ringtools-web:latest
+    ports:
+      - "7464:7464"
+    networks:
+      - umbrel
+    environment:
+      - PORT=7464
+      - LND_REST_API_WS=wss://10.21.21.9:8080
+      - LND_REST_API=https://10.21.21.9:8080
+      - MACAROON_FILE=/lnd/readonly.macaroon
+      - TLS_CERT_FILE=/lnd/tls.cert
+    volumes:
+      - /home/umbrel/umbrel/lnd/tls.cert:/lnd/tls.cert:ro
+      - /home/umbrel/umbrel/lnd/data/chain/bitcoin/mainnet/readonly.macaroon:/lnd/readonly.macaroon:ro
+networks:
+  umbrel:
+    external: true
+    name: umbrel_main_network
 ````
 
-4. Save and close the text editor
+2. Run it with `docker-compose up -d`
+3. Your local ringtools-web instance should be available at http://umbrel.local:7464
+4. To stop it, run `docker-compose stop`
 
-5. Restart lnd
-- `cd ~/umbrel`
-- `docker-compose restart lnd`
+If you prefer to build your own docker image, the source is available on [Github](https://github.com/ringtools/ringtools-web-docker)
 
-6. Wait until your node comes up again and that Umbrel still works, if not copy back the backpu config file and try again. 
+## Run from source
 
-You can verify that multiple `tlsextraip` and `tlsextradomain` are allowed at [Line 44 of the sample config](https://github.com/lightningnetwork/lnd/blob/master/sample-lnd.conf#L44).
 
-Also you can read that `tlsautorefresh=1` automatically regenerates the necessary files, so although stated in their own guide, no deletion is required.
-You might need to restart other Umbrel services since the TLS certificate is probably used by other Umbrel apps as well.
+### Server (backend)
+
+1. Clone the server repository: `git clone https://github.com/ringtools/ringtools-server-ts`
+2. Set up the `.env` tailored to your environment (see `.env.sample` for all options)
+3. Install dependencies `yarn install`
+4. Run the server `yarn start`
+5. The backend should be available at `http://localhost:7464` (Unless you set a different value for the `PORT` environment variable)
+
+### Frontend
+
+1. Clone the server repository: `git clone https://github.com/ringtools/ringtools-web-v2.git`
+2. If necessary, set up the `.env` tailored to your environment (see `.env.defaults` for all options) The default value works if you compile the frontend and serve it using the `server`.
+3. Install dependencies `yarn install`
+4. Run the server `yarn start`
+5. The backend should be available at `http://localhost:4200` 
+
+**Note**: You might need to modify the CORS settings on the server to make it work on localhost. 
