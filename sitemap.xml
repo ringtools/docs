@@ -2,52 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.rof.tools/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/faq/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/ringtools-cli/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/ringtools-web-public/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/tg/admins/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/tg/convenience/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/tg/overview/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/tg/participate/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/web/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.rof.tools/web/local-install/</loc>
-         <lastmod>2022-01-11</lastmod>
+         <lastmod>2022-01-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -78,6 +78,10 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#opening-channels">Opening channels</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#choose-ringleader-and-post-balancing-instructions">Choose ringleader and post balancing instructions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#after-balancing">After balancing</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -145,7 +149,10 @@
               
                 <h1 id="for-admins">For admins</h1>
 <h2 id="ring-wizard">Ring Wizard</h2>
-<p>The ring wizard automates the channel setup, just use <code>/start_ring_wizard</code> and follow the steps.</p>
+<p>The ring wizard automates the channel setup, just use <code>/start_ring_wizard</code> and follow the steps. Make sure you set all necessary permissions correctly.</p>
+<p><center>
+<img alt="Required admin permissions" src="/screenshots/admin-permissions-small.png" />
+</center></p>
 <h2 id="manually-set-up-telegram-channel">Manually set up Telegram channel</h2>
 <ol>
 <li>Create channel group, set name and invite <a href="https://t.me/ringtools_bot">@ringtools_bot</a>.</li>
@@ -154,7 +161,7 @@
 <li><code>/set_size [RingSize]</code> (e.g.) <code>/set_size 1000000</code></li>
 </ul>
 </li>
-<li>Get channel logo: <code>/ring_group_logo_update</code> (It should automatically detect size and number from the Ring Name).</li>
+<li>Get channel logo: <code>/update_logo</code> (It should automatically detect size and number from the Ring Name).</li>
 <li>Create ringleader poll: <code>/poll_ringleader</code></li>
 <li>Set autoclean (optional):<ul>
 <li><code>/set_autoclean cmd true</code> (Removes bot commands by others after 1 minute)</li>
@@ -168,11 +175,27 @@
 </ol>
 <h2 id="opening-channels">Opening channels</h2>
 <ol>
-<li>(Optional) reorder participats with <code>/set_order [PubKeysContents]</code> (after reordering, download pubkeys.txt from <a href="https://rof.tools">ringtools-web</a>)</li>
+<li>(Optional) reorder participants with <code>/set_order [PubKeysContents]</code> (after reordering, download pubkeys.txt from <a href="https://rof.tools">ringtools-web</a>)</li>
+<li>Post channel opening instructions message <code>/post_message opening_channels</code></li>
 <li>Share ring visual from the watch page of <a href="https://rof.tools">ringtools-web</a></li>
 <li>Let know who has to open with who <code>/ring_channels long</code></li>
 <li>Set the channel message to auto update with <code>/set_ring_mode opening_channels</code></li>
 <li>Get ring visual <code>/ring_visual</code></li>
+</ol>
+<h2 id="choose-ringleader-and-post-balancing-instructions">Choose ringleader and post balancing instructions</h2>
+<ol>
+<li>Reorder participants so the ringleader will be at the bottom with <code>/set_order [PubKeysContents]</code> (after reordering, download pubkeys.txt from <a href="https://rof.tools">ringtools-web</a>)</li>
+<li>Make sure the ringleader has set a username and said <code>/start</code> in a DM to <a href="https://t.me/ringtools_bot">@ringtools_bot</a>, and that <a href="https://t.me/ringtools_bot">@ringtools_bot</a> has the permission to promote other users.</li>
+<li>Make someone ringleader <code>/set_ringleader @ringleader</code> </li>
+<li>Post the igniter instructions message <code>/post_message igniter</code></li>
+<li>(Optional) generate the <code>igniter.conf</code> file <code>/get_file igniterconf</code></li>
+</ol>
+<h2 id="after-balancing">After balancing</h2>
+<ol>
+<li>Post the fee information message <code>/post_message fee_info</code></li>
+<li>Set the ring to balanced <code>/set_ring_mode balanced</code></li>
+<li>Update the ring logo <code>/update_logo</code></li>
+<li>Post the balanced message <code>/post_message balanced</code></li>
 </ol>
               
             </div>
