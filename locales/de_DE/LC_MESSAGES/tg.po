@@ -1,0 +1,305 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Djuri Baars
+# This file is distributed under the same license as the ringtools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ringtools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-09 01:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: ../../source/tg/admins.md:1
+msgid "For admins"
+msgstr ""
+
+#: ../../source/tg/admins.md:3
+msgid "Ring Wizard"
+msgstr ""
+
+#: ../../source/tg/admins.md:5
+msgid ""
+"The ring wizard automates the channel setup, just use "
+"`/start_ring_wizard` and follow the steps. Make sure you set all "
+"necessary permissions correctly."
+msgstr ""
+
+#: ../../source/tg/admins.md:11
+msgid "Manually set up Telegram channel"
+msgstr ""
+
+#: ../../source/tg/admins.md:13
+msgid ""
+"Create channel group, set name and invite "
+"[@ringtools_bot](https://t.me/ringtools_bot)."
+msgstr ""
+
+#: ../../source/tg/admins.md:14
+msgid "Set name and size:"
+msgstr ""
+
+#: ../../source/tg/admins.md:15
+msgid "`/set_name [RingName]` (e.g.) `/set_name #SRROF_1Msats_21stRING`"
+msgstr ""
+
+#: ../../source/tg/admins.md:16
+msgid "`/set_size [RingSize]` (e.g.) `/set_size 1000000`"
+msgstr ""
+
+#: ../../source/tg/admins.md:17
+msgid ""
+"Get channel logo: `/update_logo` (It should automatically detect size and"
+" number from the Ring Name)."
+msgstr ""
+
+#: ../../source/tg/admins.md:18
+msgid "Create ringleader poll: `/poll_ringleader`"
+msgstr ""
+
+#: ../../source/tg/admins.md:19
+msgid "Set autoclean (optional):"
+msgstr ""
+
+#: ../../source/tg/admins.md:20
+msgid "`/set_autoclean cmd true` (Removes bot commands by others after 1 minute)"
+msgstr ""
+
+#: ../../source/tg/admins.md:21
+msgid "`/set_autoclean self true` (Removes bot response after 1 minute)"
+msgstr ""
+
+#: ../../source/tg/admins.md:22
+msgid "(Optional) Post welcome message `/post_message welcome`"
+msgstr ""
+
+#: ../../source/tg/admins.md:23
+msgid "(Optional) Set user greeting `/set_greeting`"
+msgstr ""
+
+#: ../../source/tg/admins.md:24
+msgid ""
+"(Optional) Enable user greeting `/ring_greet true 900` (900 seconds is 15"
+" minutes)"
+msgstr ""
+
+#: ../../source/tg/admins.md:25
+msgid "(Optional) Change ring group channel name `/update_name`"
+msgstr ""
+
+#: ../../source/tg/admins.md:28
+msgid "Opening channels"
+msgstr ""
+
+#: ../../source/tg/admins.md:30
+msgid ""
+"(Optional) reorder participants with `/set_order [PubKeysContents]` "
+"(after reordering, download pubkeys.txt from [ringtools-"
+"web](https://rof.tools))"
+msgstr ""
+
+#: ../../source/tg/admins.md:31
+msgid "Post channel opening instructions message `/post_message opening_channels`"
+msgstr ""
+
+#: ../../source/tg/admins.md:32
+msgid ""
+"Share ring visual from the watch page of [ringtools-"
+"web](https://rof.tools)"
+msgstr ""
+
+#: ../../source/tg/admins.md:33
+msgid "Let know who has to open with who `/ring_channels long`"
+msgstr ""
+
+#: ../../source/tg/admins.md:34
+msgid ""
+"Set the channel message to auto update with `/set_ring_mode "
+"opening_channels`"
+msgstr ""
+
+#: ../../source/tg/admins.md:35
+msgid "Get ring visual `/ring_visual`"
+msgstr ""
+
+#: ../../source/tg/admins.md:37
+msgid "Choose ringleader and post balancing instructions"
+msgstr ""
+
+#: ../../source/tg/admins.md:39
+msgid ""
+"Reorder participants so the ringleader will be at the bottom with "
+"`/set_order [PubKeysContents]` (after reordering, download pubkeys.txt "
+"from [ringtools-web](https://rof.tools))"
+msgstr ""
+
+#: ../../source/tg/admins.md:40
+msgid ""
+"Make sure the ringleader has set a username and said `/start` in a DM to "
+"[@ringtools_bot](https://t.me/ringtools_bot), and that "
+"[@ringtools_bot](https://t.me/ringtools_bot) has the permission to "
+"promote other users."
+msgstr ""
+
+#: ../../source/tg/admins.md:41
+msgid "Make someone ringleader `/set_ringleader @ringleader`"
+msgstr ""
+
+#: ../../source/tg/admins.md:42
+msgid "Post the igniter instructions message `/post_message igniter`"
+msgstr ""
+
+#: ../../source/tg/admins.md:43
+msgid "(Optional) generate the `igniter.conf` file `/get_file igniterconf`"
+msgstr ""
+
+#: ../../source/tg/admins.md:45
+msgid "After balancing"
+msgstr ""
+
+#: ../../source/tg/admins.md:47
+msgid "Post the fee information message `/post_message fee_info`"
+msgstr ""
+
+#: ../../source/tg/admins.md:48
+msgid "Set the ring to balanced `/set_ring_mode balanced`"
+msgstr ""
+
+#: ../../source/tg/admins.md:49
+msgid "Update the ring logo `/update_logo`"
+msgstr ""
+
+#: ../../source/tg/admins.md:50
+msgid "Post the balanced message `/post_message balanced`"
+msgstr ""
+
+#: ../../source/tg/convenience.md:1
+msgid "Convenience features"
+msgstr ""
+
+#: ../../source/tg/convenience.md:3
+msgid ""
+"All convenience features are optional to use. The bot will not announce "
+"your registration in public channels."
+msgstr ""
+
+#: ../../source/tg/convenience.md:5
+msgid "Remember country"
+msgstr ""
+
+#: ../../source/tg/convenience.md:7
+msgid ""
+"You can say `/set_country [2-letter country code]` in a DM to "
+"[@ringtools_bot](https://t.me/ringtools_bot), so you don't have type this"
+" every time you join a ring."
+msgstr ""
+
+#: ../../source/tg/convenience.md:13
+msgid "Show flag in participation list"
+msgstr ""
+
+#: ../../source/tg/convenience.md:15
+msgid ""
+"After setting your country in a DM with "
+"[@ringtools_bot](https://t.me/ringtools_bot) you can show the country you"
+" are from in the participation lists, you can enable visibility with "
+"`/country_visible`. Saying it again will toggle it off again."
+msgstr ""
+
+#: ../../source/tg/convenience.md:20
+msgid "![Flag in participation system](/screenshots/pollcountries.jpg)"
+msgstr ""
+
+#: ../../source/tg/convenience.md:20
+msgid "Flag in participation system"
+msgstr ""
+
+#: ../../source/tg/convenience.md:24
+msgid "Remember (multiple) nodes"
+msgstr ""
+
+#: ../../source/tg/convenience.md:26
+msgid ""
+"You can register your node after verification so you don't have to type "
+"your public key after saying `/participate`. Say `/add_node` in a DM to "
+"[@ringtools_bot](https://t.me/ringtools_bot) and follow the wizard."
+msgstr ""
+
+#: ../../source/tg/convenience.md:28
+msgid ""
+"Next time you do `/participate` in a ring you can select your node using "
+"buttons, if you have multiple nodes then multiple buttons will be shown."
+msgstr ""
+
+#: ../../source/tg/convenience.md:30
+msgid "See the video below too see it in action."
+msgstr ""
+
+#: ../../source/tg/overview.md:1
+msgid "Overview"
+msgstr ""
+
+#: ../../source/tg/overview.md:3
+msgid ""
+"The RingTools Telegram-bot is currently main supporting the Satoshi Radio"
+" / Connect the World Rings of Fire and therefore mainly suited as support"
+" for the process they are using. It is still is early development so "
+"commands might change."
+msgstr ""
+
+#: ../../source/tg/overview.md:5
+msgid "Public commands"
+msgstr ""
+
+#: ../../source/tg/overview.md:17
+msgid "Ring-group commands"
+msgstr ""
+
+#: ../../source/tg/overview.md:19
+msgid "For all ring participants"
+msgstr ""
+
+#: ../../source/tg/overview.md:27
+msgid "For individual ring participants"
+msgstr ""
+
+#: ../../source/tg/overview.md:39
+msgid "For masters of ceremony"
+msgstr ""
+
+#: ../../source/tg/overview.md:60
+msgid "Poll commands"
+msgstr ""
+
+#: ../../source/tg/participate.md:1
+msgid "Participants"
+msgstr ""
+
+#: ../../source/tg/participate.md:3
+msgid "Participate in ring"
+msgstr ""
+
+#: ../../source/tg/participate.md:5
+msgid ""
+"Signal your participation with `/participate [PubKey]` (e.g. "
+"`/participate "
+"0380b3dbdf090cacee19eb4dc7a82630bd3de8b12608dd7bee971fb3cd2a5ae2fc`)"
+msgstr ""
+
+#: ../../source/tg/participate.md:6
+msgid ""
+"Set your country with `/set_country [Country]` using the 2-letter country"
+" code (e.g. `/set_country nl`)"
+msgstr ""
+
+#: ../../source/tg/participate.md:7
+msgid "Let know if/when you have the funds to open the channel `/set_funded true`"
+msgstr ""
+

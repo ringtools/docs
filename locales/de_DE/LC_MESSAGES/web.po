@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Djuri Baars
+# This file is distributed under the same license as the ringtools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ringtools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-09 01:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: ../../source/web/index.md:1
+msgid "Hello"
+msgstr ""
+
+#: ../../source/web/local-install.md:1
+msgid "Local Instance"
+msgstr "Lokale installatie"
+
+#: ../../source/web/local-install.md:3
+msgid ""
+"To use RingTools-web on your own node, you can use the pre-made docker "
+"image, build the docker-image yourself or run the components from source."
+msgstr ""
+
+#: ../../source/web/local-install.md:5
+msgid "Umbrel using docker image"
+msgstr ""
+
+#: ../../source/web/local-install.md:7
+msgid "You can run ringtools-web on your umbrel node with the pre-made image:"
+msgstr ""
+
+#: ../../source/web/local-install.md:9
+msgid "Put the following in a `docker-compose.yml` file on your node:"
+msgstr ""
+
+#: ../../source/web/local-install.md:35
+msgid "Run it with `docker-compose up -d`"
+msgstr ""
+
+#: ../../source/web/local-install.md:36
+msgid ""
+"Your local ringtools-web instance should be available at "
+"http://umbrel.local:7464"
+msgstr ""
+
+#: ../../source/web/local-install.md:37
+msgid "To stop it, run `docker-compose stop`"
+msgstr ""
+
+#: ../../source/web/local-install.md:39
+msgid ""
+"If you prefer to build your own docker image, the source is available on "
+"[Github](https://github.com/ringtools/ringtools-web-docker)"
+msgstr ""
+
+#: ../../source/web/local-install.md:41
+msgid "Run from source"
+msgstr ""
+
+#: ../../source/web/local-install.md:44
+msgid "Server (backend)"
+msgstr ""
+
+#: ../../source/web/local-install.md:46
+msgid ""
+"Clone the server repository: `git clone https://github.com/ringtools"
+"/ringtools-server-ts`"
+msgstr ""
+
+#: ../../source/web/local-install.md:47
+msgid ""
+"Set up the `.env` tailored to your environment (see `.env.sample` for all"
+" options)"
+msgstr ""
+
+#: ../../source/web/local-install.md:48 ../../source/web/local-install.md:56
+msgid "Install dependencies `yarn install`"
+msgstr ""
+
+#: ../../source/web/local-install.md:49 ../../source/web/local-install.md:57
+msgid "Run the server `yarn start`"
+msgstr ""
+
+#: ../../source/web/local-install.md:50
+msgid ""
+"The backend should be available at `http://localhost:7464` (Unless you "
+"set a different value for the `PORT` environment variable)"
+msgstr ""
+
+#: ../../source/web/local-install.md:52
+msgid "Frontend"
+msgstr ""
+
+#: ../../source/web/local-install.md:54
+msgid ""
+"Clone the server repository: `git clone https://github.com/ringtools"
+"/ringtools-web-v2.git`"
+msgstr ""
+
+#: ../../source/web/local-install.md:55
+msgid ""
+"If necessary, set up the `.env` tailored to your environment (see "
+"`.env.defaults` for all options) The default value works if you compile "
+"the frontend and serve it using the `server`."
+msgstr ""
+
+#: ../../source/web/local-install.md:58
+msgid "The backend should be available at `http://localhost:4200`"
+msgstr ""
+
+#: ../../source/web/local-install.md:60
+msgid ""
+"**Note**: You might need to modify the CORS settings on the server to "
+"make it work on localhost."
+msgstr ""
+

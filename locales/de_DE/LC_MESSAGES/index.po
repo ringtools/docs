@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Djuri Baars
+# This file is distributed under the same license as the ringtools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ringtools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-09 01:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: ../../source/index.md:3
+msgid "RingTools-CLI"
+msgstr ""
+
+#: ../../source/index.md:8
+msgid "RingTools-web"
+msgstr ""
+
+#: ../../source/index.md:16
+msgid "Telegram-bot"
+msgstr ""
+
+#: ../../source/index.md:27
+msgid "Rings of Fire"
+msgstr ""
+
+#: ../../source/index.md:35
+msgid "Satoshi Radio"
+msgstr ""
+
+#: ../../source/index.md:35
+msgid "Satoshi Radio ROF"
+msgstr ""
+
+#: ../../source/index.md:35
+msgid "Connect the World:"
+msgstr ""
+
+#: ../../source/index.md:35
+msgid "Links"
+msgstr ""
+
+#: ../../source/index.md:1
+msgid "RingTools"
+msgstr ""
+
+#: ../../source/index.md:46
+msgid ""
+"A set of tools which help to set up and manage Rings of Fire, a concept "
+"of Bitcoin Lightning Networks."
+msgstr ""
+
+#: ../../source/index.md:48
+msgid "![Screenshot](screenshots/web-main.png)"
+msgstr ""
+
+#: ../../source/index.md:48
+msgid "Screenshot"
+msgstr ""
+

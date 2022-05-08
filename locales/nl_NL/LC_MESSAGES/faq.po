@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Djuri Baars
+# This file is distributed under the same license as the ringtools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ringtools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-09 01:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: ../../source/faq.md:1
+msgid "Frequently asked questions"
+msgstr "Vaak gestelde vragen"
+
+#: ../../source/faq.md:3
+msgid "How many sats do I need to open a channel when joining a ring?"
+msgstr "Hoeveel sats heb ik nodig om een ring te openen?"
+
+#: ../../source/faq.md:5
+msgid ""
+"Since you also need some sats to open, close and perhaps reopen a channel"
+" it is recommended to have at least 40.000 sats in your wallet on top of "
+"the amount of sats you need to open your channel. That means if you "
+"participate in a 500.000 sats ring, have 540.000 sats in your on-chain "
+"wallet.&#x20;"
+msgstr ""
+
+#: ../../source/faq.md:7
+msgid ""
+"Why is the channel size of my channel lower than the amount I entered "
+"when opening?"
+msgstr "Waarom is de kanaal grootte van mijn kanaal lager dan het bedrag wat ik heb opgegeven?"
+
+#: ../../source/faq.md:9
+msgid ""
+"In the channel overview of Umbrel, after opening the commit fee is "
+"deducted from the full capacity. This is better explained as a "
+"reservation of the on-chain fees when the channel is closed unilaterally."
+msgstr ""
+
+#: ../../source/faq.md:11
+msgid ""
+"Why can't I spend or receive the full amount visible on one side of a "
+"channel?"
+msgstr "Waarom kan ik niet het hele zichtbare bedrag uitgeven aan een kant van een kanaal?"
+
+#: ../../source/faq.md:13
+msgid ""
+"A fixed amount (often 1% by default) is reserved on each side on the "
+"channel in the case you need to force-close a channel.&#x20;"
+msgstr ""
+

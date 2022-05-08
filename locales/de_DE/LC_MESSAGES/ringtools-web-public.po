@@ -1,0 +1,97 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, Djuri Baars
+# This file is distributed under the same license as the ringtools package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ringtools \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-09 01:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.1\n"
+
+#: ../../source/ringtools-web-public.md:1
+msgid "Public instance"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:3
+msgid ""
+"There is a public instance available at [rof.tools](https://rof.tools). "
+"Although it does have channels, it is probably not part of the Ring of "
+"Fire you are leading or participating in so gossip might be slower."
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:5
+msgid "Manual import node information from Cheeserobot"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:7
+msgid "Make sure Cheeserobot is in the ring channel"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:8
+msgid "Say `/groupnodes@cheeserobot`"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:10
+msgid "![Screenshot](screenshots/groupnodes-cheeserobot.png)"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:10
+#: ../../source/ringtools-web-public.md:18
+msgid "Screenshot"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:12
+msgid "Download the `.csv` file"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:13
+msgid ""
+"Open it in a text editor (don't open it in a spreadsheet like Excel or "
+"Numbers)"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:14
+msgid "Select all and copy to clipboard, including headers."
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:15
+msgid "Go to the settings page of [Ringtools-Web](https://rof.tools/settings)"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:16
+msgid "Paste the clipboard contents to the Import area."
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:18
+msgid "![Screenshot](screenshots/import-settings.png)"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:20
+msgid "Press `Import Groupnodes` button."
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:21
+msgid "You should now see the node information on the right side."
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:22
+msgid "Set a Ringname"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:23
+msgid "Click `Save Ring Settings` to persist to the browsers localstorage"
+msgstr ""
+
+#: ../../source/ringtools-web-public.md:24
+msgid "You are now ready to use the `Design` and `Watch` parts of `Ringtools-Web`"
+msgstr ""
+
