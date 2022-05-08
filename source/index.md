@@ -40,7 +40,7 @@ hidden: true
 ---
 Satoshi Radio <https://t.me/satoshiradio>
 Satoshi Radio ROF <https://t.me/SatoshiRadioROF>
-Connect the World: <https://t.me/connect_the_world>
+Connect the World <https://t.me/connect_the_world>
 ````
 
 A set of tools which help to set up and manage Rings of Fire, a concept of Bitcoin Lightning Networks.

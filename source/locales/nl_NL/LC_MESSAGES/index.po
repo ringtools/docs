@@ -54,10 +54,8 @@ msgid "RingTools"
 msgstr ""
 
 #: ../../source/index.md:46
-msgid ""
-"A set of tools which help to set up and manage Rings of Fire, a concept "
-"of Bitcoin Lightning Networks."
-msgstr ""
+msgid "A set of tools which help to set up and manage Rings of Fire, a concept of Bitcoin Lightning Networks."
+msgstr "Een set tools die helpen om Rings of Fire te beheren, een concept van Bitcoin Lightning Network"
 
 #: ../../source/index.md:48
 msgid "![Screenshot](screenshots/web-main.png)"

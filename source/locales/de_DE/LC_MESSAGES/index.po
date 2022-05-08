@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ringtools \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 01:15+0200\n"
+"POT-Creation-Date: 2022-05-09 01:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid "Satoshi Radio ROF"
 msgstr ""
 
 #: ../../source/index.md:35
-msgid "Connect the World:"
+msgid "Connect the World"
 msgstr ""
 
 #: ../../source/index.md:35

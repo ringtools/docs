@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/ringtools-web-public.md:1
 msgid "Public instance"
-msgstr ""
+msgstr "Publieke instantie"
 
 #: ../../source/ringtools-web-public.md:3
 msgid ""

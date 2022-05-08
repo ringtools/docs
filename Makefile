@@ -15,7 +15,7 @@ help:
 .PHONY: help Makefile
 
 
-gettext:
+gettext3:
 	@$(SPHINXBUILD) -b gettext "$(SOURCEDIR)" "$(BUILDDIR)/gettext" 
 
 

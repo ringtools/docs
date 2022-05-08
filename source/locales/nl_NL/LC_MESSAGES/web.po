@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../source/web/local-install.md:5
 msgid "Umbrel using docker image"
-msgstr ""
+msgstr "Umbrel met Docker image"
 
 #: ../../source/web/local-install.md:7
 msgid "You can run ringtools-web on your umbrel node with the pre-made image:"

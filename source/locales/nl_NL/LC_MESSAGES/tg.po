@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../source/tg/admins.md:1
 msgid "For admins"
-msgstr ""
+msgstr "Voor beheerders"
 
 #: ../../source/tg/admins.md:3
 msgid "Ring Wizard"
-msgstr ""
+msgstr "Ring Wizard"
 
 #: ../../source/tg/admins.md:5
 msgid ""
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../source/tg/admins.md:11
 msgid "Manually set up Telegram channel"
-msgstr ""
+msgstr "Handmatig opzetten"
 
 #: ../../source/tg/admins.md:13
 msgid ""
@@ -182,7 +182,7 @@ msgstr ""
 
 #: ../../source/tg/convenience.md:1
 msgid "Convenience features"
-msgstr ""
+msgstr "Gemaksfunctionaliteiten"
 
 #: ../../source/tg/convenience.md:3
 msgid ""
@@ -244,7 +244,7 @@ msgstr ""
 
 #: ../../source/tg/overview.md:1
 msgid "Overview"
-msgstr ""
+msgstr "Overzicht"
 
 #: ../../source/tg/overview.md:3
 msgid ""
@@ -280,7 +280,7 @@ msgstr ""
 
 #: ../../source/tg/participate.md:1
 msgid "Participants"
-msgstr ""
+msgstr "Deelnemers"
 
 #: ../../source/tg/participate.md:3
 msgid "Participate in ring"

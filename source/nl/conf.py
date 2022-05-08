@@ -44,7 +44,7 @@ templates_path = ['_templates']
 # Usually you set "language" from the command line for these cases.
 #language = 'en,nl,de'
 
-language = 'en'
+language = 'nl'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -75,4 +75,4 @@ html_theme_options = {
 
 html_static_path = ['_static']
 
-locale_dirs = ['locales/'] 
+locale_dirs = ['../locales/'] 

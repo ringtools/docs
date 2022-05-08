@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../source/faq.md:1
 msgid "Frequently asked questions"
-msgstr "Vaak gestelde vragen"
+msgstr "Vaakgestelde vragen"
 
 #: ../../source/faq.md:3
 msgid "How many sats do I need to open a channel when joining a ring?"
-msgstr "Hoeveel sats heb ik nodig om een ring te openen?"
+msgstr ""
 
 #: ../../source/faq.md:5
 msgid ""
@@ -38,7 +38,7 @@ msgstr ""
 msgid ""
 "Why is the channel size of my channel lower than the amount I entered "
 "when opening?"
-msgstr "Waarom is de kanaal grootte van mijn kanaal lager dan het bedrag wat ik heb opgegeven?"
+msgstr ""
 
 #: ../../source/faq.md:9
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 msgid ""
 "Why can't I spend or receive the full amount visible on one side of a "
 "channel?"
-msgstr "Waarom kan ik niet het hele zichtbare bedrag uitgeven aan een kant van een kanaal?"
+msgstr ""
 
 #: ../../source/faq.md:13
 msgid ""

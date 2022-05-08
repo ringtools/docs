@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../source/ringtools-cli.md:1
 msgid "Installation and usage"
-msgstr ""
+msgstr "Installatie en gebruik"
 
 #: ../../source/ringtools-cli.md:3
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../source/ringtools-cli.md:5
 msgid "Installation"
-msgstr ""
+msgstr "Installatie"
 
 #: ../../source/ringtools-cli.md:6
 msgid "Open your SSH client and log into your node"
