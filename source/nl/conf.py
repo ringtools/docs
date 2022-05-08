@@ -4,7 +4,7 @@
 # list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-source_suffix = ['.rst', '.md']
+source_suffix = ['.md']
 
 # -- Path setup --------------------------------------------------------------
 
@@ -19,7 +19,7 @@ source_suffix = ['.rst', '.md']
 
 # -- Project information -----------------------------------------------------
 
-project = 'RingTools'
+project = 'RingTools NL'
 copyright = '2021-2022 Djuri Baars'
 author = 'Djuri Baars'
 
