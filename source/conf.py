@@ -20,7 +20,7 @@ source_suffix = ['.rst', '.md']
 # -- Project information -----------------------------------------------------
 
 project = 'RingTools'
-copyright = '2021-2022 Djuri Baars'
+copyright = '2021-2022 RingTools'
 author = 'Djuri Baars'
 
 
@@ -31,7 +31,8 @@ author = 'Djuri Baars'
 # ones.
 extensions = [
     'sphinx_rtd_theme',
-    "myst_parser",
+    'myst_parser',
+    'sphinx_copybutton'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -74,5 +75,12 @@ html_theme_options = {
 }
 
 html_static_path = ['_static']
+html_css_files = ["ringtools.css"]
 
 locale_dirs = ['locales/'] 
+
+# copybutton_prompt_text = r"/[A-Za-z]*"
+# copybutton_prompt_is_regexp = True
+
+copybutton_only_copy_prompt_lines = False
+copybutton_selector = "div.highlight pre, tbody tr td:first-child p"

@@ -5,7 +5,9 @@
 The ring wizard automates the channel setup, just use `/start_ring_wizard` and follow the steps. Make sure you set all necessary permissions correctly.
 
 <center>
+
 ![Required admin permissions](/screenshots/admin-permissions-small.png)
+
 </center>
 
 ## Manually set up Telegram channel

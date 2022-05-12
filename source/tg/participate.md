@@ -7,5 +7,7 @@
 3. Let know if/when you have the funds to open the channel `/set_funded true` 
 
 <center>
+
 ![Participate screenshot](/screenshots/participate_country_funded.png)
+
 </center>

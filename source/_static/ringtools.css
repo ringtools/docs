@@ -1,0 +1,21 @@
+button.copybtn {
+    opacity: 1;
+ }
+
+ table {
+     width: 100%;
+ }
+
+ .rst-content table.docutils td {
+    vertical-align: top;
+}
+
+.rst-content table.docutils tbody tr td:first-child {
+     position: relative;
+     width: 50%;
+    
+ }
+
+ .rst-content table.docutils tbody tr td:last-child p {
+    white-space: break-spaces;
+}

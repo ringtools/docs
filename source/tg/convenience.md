@@ -7,7 +7,9 @@ All convenience features are optional to use. The bot will not announce your reg
 You can say `/set_country [2-letter country code]` in a DM to [@ringtools_bot](https://t.me/ringtools_bot), so you don't have type this every time you join a ring.
 
 <center>
+
 ![Set country](/screenshots/setcountry.png)
+
 </center>
 
 ## Show flag in participation list
@@ -15,9 +17,11 @@ You can say `/set_country [2-letter country code]` in a DM to [@ringtools_bot](h
 After setting your country in a DM with [@ringtools_bot](https://t.me/ringtools_bot) you can show the country you are from in the participation lists, you can enable visibility with `/country_visible`. Saying it again will toggle it off again.
 
 <center>
+
 ![Country visibility](/screenshots/country_consent.png)
 
 ![Flag in participation system](/screenshots/pollcountries.jpg)
+
 </center>
 
 
